@@ -1,0 +1,11 @@
+#フォルダを除外
+logs/
+output/
+data/
+.venv/
+src/__pycache__/
+__pycache__/
+src/old/
+
+*.xlsx
+*.xml
