@@ -232,6 +232,8 @@ def write_df_to_excel_with_formatting(df: pd.DataFrame, excel_path: str, sheet_n
                 if col_name not in cols_to_hide:
                     display_cols.append(col_name)
 
+            print(display_cols + 'aaa')
+
             # --- 1. ヘッダー行の書き込み ---
             for col_idx, col_name in enumerate(display_cols):
                 worksheet.write(0, col_idx, col_name, header_format)
