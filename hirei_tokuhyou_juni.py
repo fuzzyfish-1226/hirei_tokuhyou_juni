@@ -156,7 +156,6 @@ def _get_display_width(text: str) -> int:
             width += 1
     return width
 
-# ★★★【ここからが修正箇所】★★★
 # write_df_to_excel_with_formatting 関数を修正します。
 def write_df_to_excel_with_formatting(df: pd.DataFrame, excel_path: str, sheet_name: str, combine_name_cols: bool) -> None:
     """
@@ -256,7 +255,6 @@ def write_df_to_excel_with_formatting(df: pd.DataFrame, excel_path: str, sheet_n
 
     except Exception as e:
         print(f"エラー: Excelファイル '{excel_path}' の書き込み中にエラーが発生しました: {e}")
-# ★★★【ここまでが修正箇所】★★★
 
 # ==============================================================================
 # メイン処理関数
